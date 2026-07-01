@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f1115" />
+  <title>Strength</title>
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="/icon-192.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="row">
+      <h1>Strength</h1>
+      <span id="date" class="date"></span>
+    </div>
+    <nav id="types" class="types">
+      <button data-type="leg_a" class="active">Leg A · Push</button>
+      <button data-type="leg_b">Leg B · Pull</button>
+      <button data-type="upper_1">Upper +1</button>
+    </nav>
+  </header>
+
+  <section id="coverage" class="coverage" aria-label="This week's muscle-group coverage"></section>
+
+  <main id="blocks" aria-live="polite"></main>
+
+  <footer>
+    <div id="status" class="status">Loading…</div>
+    <div class="actions">
+      <button id="sync" class="ghost">Sync now</button>
+      <button id="save" class="primary">Save session</button>
+    </div>
+  </footer>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

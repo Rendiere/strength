@@ -1,0 +1,17 @@
+{
+  // Strength logging app — Worker API + D1 + static PWA assets.
+  // database_id is filled in at deploy time (see DEPLOY.md). Local dev uses a
+  // local SQLite shim and ignores database_id.
+  "name": "strength",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-06-01",
+  "assets": { "directory": "./public", "binding": "ASSETS" },
+  "routes": [{ "pattern": "strength.renswork.space", "custom_domain": true }],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "strength",
+      "database_id": "60ea9286-7666-49de-bf6e-b4579bbe9739"
+    }
+  ]
+}
